@@ -1,0 +1,20 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(È‡·±şÿÿÿÿ8š‚éòõ1
+P
+java:S1948"3Make "dateTimeFormatter" transient or serializable.(Ü´àÖ8¤‚éòõ1
+N
+java:S1948",Make "dBoperator" transient or serializable.(ïƒ¥¿şÿÿÿÿ8¤‚éòõ1
+B
+java:S1948"%Make "log" transient or serializable.(ÙÿİÆ8¤‚éòõ1
+]
+java:S34579"AFormat specifiers should be used instead of string concatenation.(ñÆ]8¨‚éòõ1
+›
+java:S1130h"yRemove the declaration of thrown exception 'jakarta.servlet.ServletException', as it cannot be thrown from method's body.(‡Öíúÿÿÿÿ8ª‚éòõ1
+W
+java:S1128":Remove this unused import 'jakarta.servlet.ServletConfig'.(É‘8Á÷éòõ1
+u
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Ü´àÖ8«‚éòõ1
+z
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ïƒ¥¿şÿÿÿÿ8¼Ãéòõ1
+u
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÙÿİÆ8«‚éòõ1

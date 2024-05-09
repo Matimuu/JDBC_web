@@ -1,0 +1,40 @@
+
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+e
+5src/main/java/com/admin/JDBC_app_web/bean/Person.java,5/5/558156482d464a2d1747c5b7ebfc3da998840e0d
+h
+8src/main/java/com/admin/JDBC_app_web/dao/DBoperator.java,7/5/757addc7edfbdcbc1f52834cbde628369a23144b
+i
+9src/main/java/com/admin/JDBC_app_web/dao/DBconnector.java,8/b/8b5139a9317c1d89ec47868f17c2e01d94cfacb1
+i
+9src/main/java/com/admin/JDBC_app_web/web/UserServlet.java,6/6/66b1e61bc3f8a74a0d0953c0c66c777d5bc58616
+O
+src/main/webapp/WEB-INF/web.xml,2/e/2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+I
+src/main/webapp/Error.jsp,4/7/4767b7505c9e69b8adf2db133d8edcf9dc8b8aa9
+O
+src/main/webapp/person-list.jsp,6/2/620af87f2a9182970d9b26fc5f34798bbbdecc8b
+O
+src/main/webapp/person-form.jsp,0/7/07a33f3a5281c664e67cde3e94232b7f77ef29d7
+Å
+Q.idea/sonarlint/securityhotspotstore/6/6/66b1e61bc3f8a74a0d0953c0c66c777d5bc58616,6/a/6af2a0afbbe506a7ca85f11cffec46e4573d4697
+Å
+Q.idea/sonarlint/securityhotspotstore/5/5/558156482d464a2d1747c5b7ebfc3da998840e0d,5/b/5b77a9f35a2bb918c8b48016f56eeb75114cb6fa
+Å
+Q.idea/sonarlint/securityhotspotstore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded,b/a/ba553ac59b6707e71c75d153a30b48955826938d
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+Å
+Q.idea/sonarlint/securityhotspotstore/7/5/757addc7edfbdcbc1f52834cbde628369a23144b,f/c/fcda3ea89c368cf0055b651d6ae124c4d2a0d794
+Å
+Q.idea/sonarlint/securityhotspotstore/8/b/8b5139a9317c1d89ec47868f17c2e01d94cfacb1,f/0/f084f47ae5d663f0a08cf5f97d922e868ff663e9
+Å
+Q.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,2/c/2cabb939da04d3de3a200bf2b575690e1a16316d
+w
+G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8/6/863e0292fd7e9b3e74dafd6cc01f73ba76346482
