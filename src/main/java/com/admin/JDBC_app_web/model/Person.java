@@ -1,4 +1,4 @@
-package com.admin.JDBC_app_web.bean;
+package com.admin.JDBC_app_web.model;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -73,25 +73,11 @@ public class Person {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Person [");
-        sb.append("id=").append(id);
-        sb.append(", name=").append(name);
-        sb.append(", surname=").append(surname);
-        if (dateOfBirth != null) {
-            sb.append(", dateOfBirth=").append(dateOfBirth.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
-        } else {
-            sb.append(", dateOfBirth=null");
-        }
-        sb.append("]");
-        return sb.toString();
+        return "Person: " +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", birthDate='" +  dateTimeFormatter.format(dateOfBirth) + '\'' +
+                ", dateOfCreation='" + dateTimeFormatter.format(dateOfBirth) + "'\n";
     }
-//    @Override
-//    public String toString() {
-//        return "id=" + id +
-//                ", name='" + name + '\'' +
-//                ", surname='" + surname + '\'' +
-//                ", birthDate='" +  dateTimeFormatter.format(dateOfBirth) + '\'' +
-//                ", dateOfCreation='" + dateTimeFormatter.format(dateOfCreation) + "'\n";
-//    }
 }
