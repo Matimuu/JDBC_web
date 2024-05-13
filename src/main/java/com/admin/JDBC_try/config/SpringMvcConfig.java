@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 @EnableWebMvc
 @ComponentScan(basePackages = "com.admin.JDBC_try")
 public class SpringMvcConfig implements WebMvcConfigurer {
-
+    //Setup connection to DB
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource;
@@ -33,6 +33,14 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 
         return dataSource;
     }
+
+    //Creating connection to DB
+    @Bean
+    public DAO getDao() {
+        return new DAOimpl(getDataSource());
+    }
+
+    //Path to .jsp files
     @Bean
     public ViewResolver getViewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
@@ -40,9 +48,5 @@ public class SpringMvcConfig implements WebMvcConfigurer {
         resolver.setSuffix(".jsp");
 
         return resolver;
-    }
-    @Bean
-    public DAO getDao() {
-        return new DAOimpl(getDataSource());
     }
 }

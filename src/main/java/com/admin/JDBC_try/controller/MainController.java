@@ -16,10 +16,18 @@ import java.util.List;
  * @author Mendoza Perez Omar Enrique
  * @date 2024/05/12 17:09
  */
+
+/**
+ * Class to work with web server
+ * To handel requests and response.
+ */
 @Controller
 public class MainController {
+    //Variable
     @Autowired
     private DAO dao;
+
+    //Default page
     @RequestMapping(value = "/")
     public ModelAndView listPerson(ModelAndView model) {
         List<Person> personList = dao.list();
@@ -29,6 +37,8 @@ public class MainController {
 
         return model;
     }
+
+    //Creating new person
     @RequestMapping(value = "/new", method = RequestMethod.GET)
     public ModelAndView newPerson(ModelAndView model) {
         Person newPerson = new Person();
@@ -38,6 +48,7 @@ public class MainController {
 
         return model;
     }
+    //Save or Edit person.
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public ModelAndView savePerson(@ModelAttribute Person person) {
         if (person.getId() == null) {
@@ -48,6 +59,7 @@ public class MainController {
 
         return new ModelAndView("redirect:/");
     }
+    //Edit person
     @RequestMapping(value = "/edit", method = RequestMethod.GET)
     public ModelAndView editPerson(HttpServletRequest request) {
         int id = Integer.parseInt(request.getParameter("id"));
@@ -59,6 +71,7 @@ public class MainController {
 
         return model;
     }
+    //Delete person
     @RequestMapping(value = "/delete", method = RequestMethod.GET)
     public ModelAndView deletePerson(HttpServletRequest request) {
         int id = Integer.parseInt(request.getParameter("id"));

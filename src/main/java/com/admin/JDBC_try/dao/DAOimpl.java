@@ -13,17 +13,24 @@ import java.util.List;
  * @author Mendoza Perez Omar Enrique
  * @date 2024/05/12 13:50
  */
+
+/**
+ * DB operator.
+ */
 public class DAOimpl implements DAO {
+    //Constants
     public static final String PERSON_ID = "person_id";
     public static final String PERSON_NAME = "person_name";
     public static final String PERSON_SURNAME = "person_surname";
     public static final String PERSON_DATE_OF_BIRTH = "person_dateOfBirth";
     private JdbcTemplate jdbcTemplate;
 
+    //Constructor
     public DAOimpl(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
+    //Methods
     @Override
     public int save(Person p) {
         String sqlInsert = "INSERT INTO persons (person_name, person_surname, person_dateOfBirth) VALUES(?,?,?)";
