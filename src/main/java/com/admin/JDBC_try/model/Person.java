@@ -14,7 +14,7 @@ public class Person {
 
     //Variables.
     private final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-    private int id;
+    private Integer id;
     private String name;
     private String surname;
     private LocalDate dateOfBirth;
@@ -30,7 +30,7 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Person(int id, String name, String surname, LocalDate dateOfBirth) {
+    public Person(Integer id, String name, String surname, LocalDate dateOfBirth) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -67,7 +67,7 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

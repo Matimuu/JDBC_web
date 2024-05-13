@@ -10,30 +10,37 @@
 <html>
 <head>
     <title>New or Edit Person</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<div align="center">
-    <h1>New or Edit Person</h1>
-    <form:form action="save" method="post" modelAttribute="person">
-        <table cellpadding="5">
-            <form:hidden path="id" />
-            <tr>
-                <td>Name:</td>
-                <td><form:input path="name"/></td>
-            </tr>
-            <tr>
-                <td>Surname:</td>
-                <td><form:input path="surname"/></td>
-            </tr>
-            <tr>
-                <td>Date of Birth:</td>
-                <td><form:input path="dateOfBirth"/></td>
-            </tr>
-        </table>
-        <tr>
-            <td colspan="2" align="center"><input type="submit" value="Save"></td>
-        </tr>
-    </form:form>
-</div>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark"
+                 style="background-color: #ff9900">
+            </nav>
+        </header>
+        <br>
+        <div class="container col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form:form action="save" method="post" modelAttribute="person">
+                        <form:hidden path="id" />
+                        <fieldset class="form-group">
+                            Name:
+                            <form:input path="name"/>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            Surname:
+                            <form:input path="surname"/>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            Date of Birth:
+                            <form:input path="dateOfBirth"/>
+                        </fieldset>
+                            <input type="submit" value="Save">
+                    </form:form>
+                </div>
+            </div>
+        </div>
 </body>
 </html>

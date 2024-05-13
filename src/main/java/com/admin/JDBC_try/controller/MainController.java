@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -40,7 +39,7 @@ public class MainController {
         return model;
     }
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public ModelAndView saveContact(@ModelAttribute Person person) {
+    public ModelAndView savePerson(@ModelAttribute Person person) {
         if (person.getId() == null) {
             dao.save(person);
         } else {
