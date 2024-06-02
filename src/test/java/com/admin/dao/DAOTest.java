@@ -1,8 +1,5 @@
 package com.admin.dao;
 
-import com.admin.JDBC_try.dao.DAO;
-import com.admin.JDBC_try.dao.DAOimpl;
-import com.admin.JDBC_try.model.Person;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 

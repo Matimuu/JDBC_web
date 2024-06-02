@@ -1,10 +1,9 @@
 package com.admin.JDBC_try.config;
 
-import com.admin.JDBC_try.dao.DAO;
-import com.admin.JDBC_try.dao.DAOimpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -27,7 +26,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 
         dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:8889/JDBC_app");
+        dataSource.setUrl("jdbc:mysql://localhost:8889/gamer_shop");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
 
@@ -35,9 +34,13 @@ public class SpringMvcConfig implements WebMvcConfigurer {
     }
 
     //Creating connection to DB
+//    @Bean
+//    public DAO getDao() {
+//        return new DAOimpl(getDataSource());
+//    }
     @Bean
-    public DAO getDao() {
-        return new DAOimpl(getDataSource());
+    public JdbcTemplate jdbcTemplate(DataSource dataSource) {
+        return new JdbcTemplate(dataSource);
     }
 
     //Path to .jsp files

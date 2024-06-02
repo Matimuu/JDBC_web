@@ -1,7 +1,5 @@
 package com.admin.JDBC_try.controller;
 
-import com.admin.JDBC_try.dao.DAO;
-import com.admin.JDBC_try.model.Person;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,13 +19,20 @@ import java.util.List;
  * Class to work with web server
  * To handel requests and response.
  */
+//Класс является контроллером http запросов.
 @Controller
 public class MainController {
     //Variable
+
+//Spring автоматически внедрит объект DAO в класс
+//Без необходимости создавать экземпляр.
     @Autowired
     private DAO dao;
 
+
     //Default page
+    //Список реквестов.
+    //При получение запроса к корневому URL будет вызываться метод listPerson.
     @RequestMapping(value = "/")
     public ModelAndView listPerson(ModelAndView model) {
         List<Person> personList = dao.list();
